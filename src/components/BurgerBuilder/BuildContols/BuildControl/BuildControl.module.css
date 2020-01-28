@@ -1,0 +1,23 @@
+.LabelBox {
+    width : 100px;
+    height: 30px;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.Button {
+    margin-left : 20px;
+    margin-right : 20px;
+    border-radius: 5px;
+    outline : none;
+    background-color: rgb(233, 139, 32);
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #d6390a;
+    color: #966909;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #966909;
+    
+}
