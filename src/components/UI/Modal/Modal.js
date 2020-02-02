@@ -12,11 +12,11 @@ class Modal extends Component {
     render() {
         return (
             <Cover>
-                <div className={CSS.Modal} style={{transform : props.display ? 'translateY(0)' : 'translateY(-100vh)',
-                    opacity : props.display ? '1' : '0'}}>
-                    {props.children}
+                <div className={CSS.Modal} style={{transform : this.props.display ? 'translateY(0)' : 'translateY(-100vh)',
+                    opacity : this.props.display ? '1' : '0'}}>
+                    {this.props.children}
                 </div>
-                <Backdrop show={props.display} cancel={props.cancelOrder}/>
+                <Backdrop show={this.props.display} cancel={this.props.cancelOrder}/>
             </Cover>
         );
     }
