@@ -1,5 +1,5 @@
 import React from 'react' ;
-import Cover from '../../../hoc/Cover';
+import Cover from '../../../hoc/Cover/Cover';
 import Backdrop from '../Backdrop/Backdrop';
 import CSS from './Modal.module.css';
 

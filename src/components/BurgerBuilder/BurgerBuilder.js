@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Cover from '../../hoc/Cover';
+import Cover from '../../hoc/Cover/Cover';
 import Burger from './Burger/Burger';
 import BuildContols from './BuildContols/BuildControls';
 import Modal from '../UI/Modal/Modal';
@@ -27,7 +27,6 @@ class BurgerBuilder extends Component {
     
     purchaseBurger = (ingredients) => {
         let sum = Object.keys(ingredients).reduce((sum , el) =>sum + ingredients[el] ,0);
-        console.log(sum);
         this.setState({purchase : sum>0?true:false});
     }
 
@@ -44,6 +43,7 @@ class BurgerBuilder extends Component {
         this.setState({
             ingredient : tempObject,
             burgerPrice : newPrice
+
         });
         this.purchaseBurger(tempObject);        
     }

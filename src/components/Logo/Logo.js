@@ -4,7 +4,7 @@ import BurgerPic from '../../Assets/images/burger-logo.png';
 
 const logo = (props) => {
     return (
-        <div className={CSS.Logo}>
+        <div className={CSS.Logo} onClick={props.cancel}>
             <img src={BurgerPic} alt='burger' />
         </div>
     );
