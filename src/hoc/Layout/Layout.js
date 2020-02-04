@@ -1,5 +1,5 @@
 import React, { Component } from 'react' ;
-import LayoutCSS from './Layout.module.css';
+import styles from './Layout.module.css';
 import Cover from '../Cover/Cover';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
@@ -25,7 +25,7 @@ class Layout extends Component{
             <Cover>
                 <Toolbar toogleDrawer={this.toogleSideDrawer}/>
                 <SideDrawer curState={this.state.sideDrawerState} closeSideDrawer={this.sideDrawerHandler}/>
-                <main className={LayoutCSS.Content}>
+                <main className={styles.Content}>
                     {this.props.children}
                 </main>
             </Cover>

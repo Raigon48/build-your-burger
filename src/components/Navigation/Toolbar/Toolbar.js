@@ -2,16 +2,16 @@ import React from 'react' ;
 import Logo from '../../Logo/Logo';
 import NavItems from '../NavItems/NavItems';
 import DrawerToogle from '../DrawerToogle/DrawerToogle';
-import CSS from './Toolbar.module.css';
+import styles from './Toolbar.module.css';
 
 const toolbar = (props) => {
     return (
-        <header className={CSS.Toolbar}>
+        <header className={styles.Toolbar}>
             <DrawerToogle toogle={props.toogleDrawer}/>
-            <div className={CSS.Logo}>
+            <div className={styles.Logo}>
                 <Logo />
             </div>
-            <nav className={CSS.DesktopOnly}>
+            <nav className={styles.DesktopOnly}>
                 <NavItems />
             </nav>
         </header>

@@ -1,9 +1,9 @@
 import React from 'react';
-import CSS from './DrawerToogle.module.css';
+import styles from './DrawerToogle.module.css';
 
 const drawerToogle = (props) => {
     return (
-        <div className={CSS.DrawerToggle} onClick={props.toogle}>
+        <div className={styles.DrawerToggle} onClick={props.toogle}>
             <div></div>
             <div></div>
             <div></div>

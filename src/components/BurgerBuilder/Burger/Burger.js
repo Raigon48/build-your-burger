@@ -1,5 +1,5 @@
 import React from 'react';
-import BurgerCSS from './Burger.module.css';
+import styles from './Burger.module.css';
 import BurgerIngredient from '../BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
@@ -12,7 +12,7 @@ const burger = (props) => {
             ingredientArray = <p>Add ingredients!</p>;
         }
     return (
-        <div className={BurgerCSS.Container + " " + BurgerCSS.HideScroll}>
+        <div className={styles.Container + " " + styles.HideScroll}>
             <BurgerIngredient type="bread-top"/>
             {ingredientArray}
             <BurgerIngredient type="bread-bottom"/>

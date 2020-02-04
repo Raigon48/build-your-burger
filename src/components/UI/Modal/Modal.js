@@ -1,7 +1,7 @@
 import React, { Component } from 'react' ;
 import Cover from '../../../hoc/Cover/Cover';
 import Backdrop from '../Backdrop/Backdrop';
-import CSS from './Modal.module.css';
+import styles from './Modal.module.css';
 
 class Modal extends Component {
 
@@ -12,7 +12,7 @@ class Modal extends Component {
     render() {
         return (
             <Cover>
-                <div className={CSS.Modal} style={{transform : this.props.display ? 'translateY(0)' : 'translateY(-100vh)',
+                <div className={styles.Modal} style={{transform : this.props.display ? 'translateY(0)' : 'translateY(-100vh)',
                     opacity : this.props.display ? '1' : '0'}}>
                     {this.props.children}
                 </div>
